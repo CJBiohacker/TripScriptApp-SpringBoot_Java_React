@@ -3,7 +3,9 @@ package com.singularitec.tripscript.services;
 import com.singularitec.tripscript.models.Viagem;
 import com.singularitec.tripscript.repositories.ViagemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ViagemServiceImplementation implements ViagemService {
 
     @Autowired                                          // Cria o vínculo automático entre o Repositório e o Serviço da Classe/Tabela Viagem.
