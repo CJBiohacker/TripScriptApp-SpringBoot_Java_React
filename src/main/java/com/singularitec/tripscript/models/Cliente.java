@@ -1,5 +1,7 @@
 package com.singularitec.tripscript.models;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -11,7 +13,7 @@ public class Cliente {
     @Column(name = "IdCliente")                             // Define o nome do atributo
     private int IdCliente;
 
-    @Column(nullable = false)                               // Identifica como Not Null
+    @NotNull                                                // Identifica o atributo como Not Null
     private String Nome, DataNasc, Celular;
 
     @OneToMany(mappedBy = "cliente")                        // Define a relação 1:N mapeando a tabela N

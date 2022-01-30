@@ -1,5 +1,7 @@
 package com.singularitec.tripscript.models;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.*;
 
 @Entity
@@ -10,10 +12,10 @@ public class Viagem {
     @Column(name = "IdViagem")                              // Define o nome do atributo
     private int IdViagem;
 
-    @Column(nullable = false)                               // Identifica o atributo como Not Null
+    @NotNull                                                // Identifica o atributo como Not Null
     private String Destino, Horario, Quantidade;
 
-    @Column(nullable = false)
+    @NotNull                                                // Identifica o atributo como Not Null
     private float Preco;
 
     @ManyToOne                                              // Define a relação N:1

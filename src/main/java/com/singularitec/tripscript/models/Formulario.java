@@ -1,5 +1,7 @@
 package com.singularitec.tripscript.models;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.*;
 
 @Entity
@@ -10,7 +12,7 @@ public class Formulario {
     @Column(name = "IdFormulario")                          // Define o nome do atributo
     private int IdFormulario;
 
-    @Column(nullable = false)                               // Identifica o atributo como Not Null
+    @NotNull                                                // Identifica o atributo como Not Null
     private String Nome, Email, Local, Mensagem;
 
     // Criação do Construtor
