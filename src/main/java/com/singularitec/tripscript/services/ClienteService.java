@@ -2,6 +2,9 @@ package com.singularitec.tripscript.services;
 
 import com.singularitec.tripscript.models.Cliente;
 
+import java.util.List;
+
 public interface ClienteService {
-    public Cliente saveCliente(Cliente cliente);
+    Cliente saveCliente(Cliente cliente);
+    List<Cliente> getAllClientes();
 }

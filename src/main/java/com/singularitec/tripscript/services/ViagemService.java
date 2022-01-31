@@ -2,6 +2,9 @@ package com.singularitec.tripscript.services;
 
 import com.singularitec.tripscript.models.Viagem;
 
+import java.util.List;
+
 public interface ViagemService {
-    public Viagem saveViagem(Viagem viagem);
+    Viagem saveViagem(Viagem viagem);
+    List<Viagem> getAllViagens();
 }
