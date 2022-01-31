@@ -13,6 +13,6 @@ public class ClienteServiceImplementation implements ClienteService {
 
     @Override
     public Cliente saveCliente(Cliente cliente) {
-        return clienteRepository.save(cliente);
+        return clienteRepository.save(cliente);             // Método que permite realizar um Create/POST de um novo Cliente no BD.
     }
 }

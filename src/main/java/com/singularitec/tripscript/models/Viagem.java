@@ -12,14 +12,15 @@ public class Viagem {
     @Column(name = "IdViagem")                              // Define o nome do atributo
     private int IdViagem;
 
-    @NotNull                                                // Identifica o atributo como Not Null
+    @NotNull
     private String Destino, Horario, Quantidade;
 
-    @NotNull                                                // Identifica o atributo como Not Null
+    @NotNull
     private float Preco;
 
+    @NotNull
     @ManyToOne                                              // Define a relação N:1
-    @JoinColumn(name="IdCliente")                           //
+    @JoinColumn(name="id_cliente")
     private Cliente cliente;                                // Cria uma variável da tabela de referência.
 
     // Criação do Construtor

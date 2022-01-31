@@ -13,9 +13,10 @@ public class Cliente {
     @Column(name = "IdCliente")                             // Define o nome do atributo
     private int IdCliente;
 
-    @NotNull                                                // Identifica o atributo como Not Null
-    private String Nome, DataNasc, Celular;
+    @NotNull
+    private String Nome, Nasc, Celular;
 
+    @NotNull
     @OneToMany(mappedBy = "cliente")                        // Define a relação 1:N mapeando a tabela N
     private List<Viagem> viagens;                           // Variável de Lista para o id da tabela referenciada.
 
@@ -40,12 +41,12 @@ public class Cliente {
         Nome = nome;
     }
 
-    public String getDataNasc() {
-        return DataNasc;
+    public String getNasc() {
+        return Nasc;
     }
 
-    public void setDataNasc(String dataNasc) {
-        DataNasc = dataNasc;
+    public void setNasc(String nasc) {
+        Nasc = nasc;
     }
 
     public String getCelular() {
@@ -58,5 +59,9 @@ public class Cliente {
 
     public List<Viagem> getViagens() {
         return viagens;
+    }
+
+    public void setViagens(List<Viagem> viagens) {
+        this.viagens = viagens;
     }
 }

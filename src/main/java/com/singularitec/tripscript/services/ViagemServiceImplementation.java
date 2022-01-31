@@ -13,6 +13,6 @@ public class ViagemServiceImplementation implements ViagemService {
 
     @Override
     public Viagem saveViagem(Viagem viagem) {
-        return viagemRepository.save(viagem);
+        return viagemRepository.save(viagem);           // Método que permite realizar um Create/POST de uma nova Viagem no BD.
     }
 }

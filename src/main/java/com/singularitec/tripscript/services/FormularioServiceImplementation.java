@@ -13,6 +13,6 @@ public class FormularioServiceImplementation implements FormularioService {
 
     @Override
     public Formulario saveFormulario(Formulario formulario) {
-        return formularioRepository.save(formulario);
+        return formularioRepository.save(formulario);           // Método que permite realizar um Create/POST de um novo Formulario no BD.
     }
 }

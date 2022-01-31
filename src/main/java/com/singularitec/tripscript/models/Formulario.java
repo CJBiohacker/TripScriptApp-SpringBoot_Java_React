@@ -12,7 +12,7 @@ public class Formulario {
     @Column(name = "IdFormulario")                          // Define o nome do atributo
     private int IdFormulario;
 
-    @NotNull                                                // Identifica o atributo como Not Null
+    @NotNull
     private String Nome, Email, Local, Mensagem;
 
     // Criação do Construtor
