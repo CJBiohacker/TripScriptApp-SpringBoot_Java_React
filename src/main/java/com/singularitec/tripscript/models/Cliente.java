@@ -1,10 +1,12 @@
 package com.singularitec.tripscript.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
 
 import javax.persistence.*;
 import java.util.List;
 
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @Entity                                                     // Identifica a classe como Entidade/Tabela SQL
 public class Cliente {
 
@@ -64,5 +66,5 @@ public class Cliente {
     public void setViagens(List<Viagem> viagens) {
         this.viagens = viagens;
     }
-    
+
 }

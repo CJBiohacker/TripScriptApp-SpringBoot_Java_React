@@ -54,7 +54,7 @@ public class ViagemController {
         }
     }
 
-    @DeleteMapping("/{id}")                                                     // Mapeia os Requests de HTTP DELETE (DELETE) por id para os métodos locais.
+    @DeleteMapping("/delete/{id}")                                                     // Mapeia os Requests de HTTP DELETE (DELETE) por id para os métodos locais.
     public String delete(@PathVariable Integer id){
         viagemService.deleteViagem(id);
         return "<h1>Viagem de id " + id + " deletada !</h1>";
