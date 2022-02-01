@@ -14,12 +14,22 @@ public class FormularioServiceImplementation implements FormularioService {
     private FormularioRepository formularioRepository;
 
     @Override
-    public Formulario saveFormulario(Formulario formulario) {
-        return formularioRepository.save(formulario);           // Método que permite realizar um Create/POST de um novo Formulario no BD.
+    public Formulario saveFormulario(Formulario formulario) {   // Método que permite realizar um Create/POST de um novo Formulario no BD.
+        return formularioRepository.save(formulario);
     }
 
     @Override
-    public List<Formulario> getAllFormularios() {
-        return formularioRepository.findAll();                  // Método que permite realizar um Read/GET de todos Formularios no BD.
+    public List<Formulario> getAllFormularios() {               // Método que permite realizar um Read/GET de todos Formularios no BD.
+        return formularioRepository.findAll();
+    }
+
+    @Override
+    public Formulario getFormulario(Integer id) {               // Método que permite realizar um Read/GET de um Formulario pelo id no BD.
+        return formularioRepository.getById(id);
+    }
+
+    @Override
+    public void deleteFormulario(Integer id) {                  // Método que permite realizar um Delete/DELETE de um Formulario pelo id no BD.
+        formularioRepository.deleteById(id);
     }
 }

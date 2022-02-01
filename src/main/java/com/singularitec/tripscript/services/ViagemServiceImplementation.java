@@ -1,12 +1,9 @@
 package com.singularitec.tripscript.services;
 
 import com.singularitec.tripscript.models.Viagem;
-import com.singularitec.tripscript.models.Viagem;
-import com.singularitec.tripscript.models.Viagem;
 import com.singularitec.tripscript.repositories.ViagemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
@@ -25,4 +22,16 @@ public class ViagemServiceImplementation implements ViagemService {
     public List<Viagem> getAllViagens() {               // Método que permite realizar um Read/GET de todos as Viagens no BD.
         return viagemRepository.findAll();
     }
+
+    @Override
+    public Viagem getViagem(Integer id) {               // Método que permite realizar um Read/GET de uma Viagem pelo id no BD.
+        return viagemRepository.getById(id);
+    }
+
+    @Override
+    public void deleteViagem(Integer id) {              // Método que permite realizar um Delete/DELETE de uma Viagem pelo id no BD.
+        viagemRepository.deleteById(id);
+    }
+
+
 }

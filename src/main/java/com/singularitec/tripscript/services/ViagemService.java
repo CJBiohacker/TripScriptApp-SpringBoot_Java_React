@@ -7,4 +7,6 @@ import java.util.List;
 public interface ViagemService {
     Viagem saveViagem(Viagem viagem);
     List<Viagem> getAllViagens();
+    Viagem getViagem(Integer id);
+    void deleteViagem(Integer id);
 }

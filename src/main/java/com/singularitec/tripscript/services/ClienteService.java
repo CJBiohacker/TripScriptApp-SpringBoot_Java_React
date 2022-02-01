@@ -7,4 +7,6 @@ import java.util.List;
 public interface ClienteService {
     Cliente saveCliente(Cliente cliente);
     List<Cliente> getAllClientes();
+    Cliente getCliente(Integer id);
+    void deleteCliente(Integer id);
 }
