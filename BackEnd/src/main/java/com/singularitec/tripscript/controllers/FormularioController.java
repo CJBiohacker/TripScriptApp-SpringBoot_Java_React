@@ -1,7 +1,6 @@
 package com.singularitec.tripscript.controllers;
 
 import com.singularitec.tripscript.models.Formulario;
-import com.singularitec.tripscript.models.Formulario;
 import com.singularitec.tripscript.services.FormularioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
