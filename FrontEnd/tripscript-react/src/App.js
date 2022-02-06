@@ -1,23 +1,23 @@
 import React from 'react';
-import ResponsiveAppBar from './components/ResponsiveAppBar'
+import { Home, Clientes, Viagens, Contato } from './pages'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './styles/global.css';
 
 function App() {
+
   return (
     <div className="App">
-      <ResponsiveAppBar />
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/rooms/new" exact component={NewRoom} />
-          <Route path="/rooms/:id" exact component={Room}
-          />
-          <Route path="/admin/rooms/:id" exact component={AdminRoom} />
+          <Route path="/clientes" exact component={Clientes} />
+          <Route path="/viagens" exact component={Viagens} />
+          <Route path="/contato" exact component={Contato} />
         </Switch>
       </BrowserRouter>
     </div>
   );
+
 }
 
 export default App;
