@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { Slider } from '../components/Slider'
-import { ResponsiveAppBar } from '../components/ResponsiveAppBar'
-import { Footer } from '../components/Footer'
+import SlideShow from '../components/SlideShow';
+import ResponsiveAppBar from '../components/ResponsiveAppBar';
+import Footer from '../components/Footer';
+import About from '../components/About';
 import '../styles/global.css'
 
 const Home = () => {
@@ -9,9 +10,11 @@ const Home = () => {
     return (
         <div>
             <ResponsiveAppBar />
-            <Slider />
-
+            <SlideShow />
+            <About />
             <Footer />
         </div>
     );
 }
+
+export default Home;
