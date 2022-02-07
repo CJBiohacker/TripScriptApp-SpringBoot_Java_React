@@ -9,11 +9,26 @@
 
     color: white;
 
+    @media (max-width: 460px), (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
     .home-logo {
         grid-row-start: 3;
         grid-column-start: 1;
         justify-self: center;
         align-self: center;
+
+        @media (max-width: 460px) {
+            width: 60%;
+        }
+
+        @media (max-width: 768px) {
+            width: 60%;
+        }
     }
 
     .home-intro {
@@ -21,7 +36,11 @@
         grid-column-start: 2;
 
         >p {
-            font-size: 1.2rem;
+            font-size: 0.8rem;
+
+            @media (max-width: 460px) {
+                font-size: 0.7rem;
+            }
         }
     }
 
@@ -30,7 +49,11 @@
         grid-column-start: 2;   
 
         >p {
-            font-size: 1.2rem;
+            font-size: 0.8rem;
+
+            @media (max-width: 460px) {
+                font-size: 0.7rem;
+            }
         }
     }
 }
