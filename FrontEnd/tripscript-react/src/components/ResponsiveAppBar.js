@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
 const pages = ['Clientes', 'Viagens', 'Contato'];
-const settings = ['Perfil', 'Conta', 'Plataforma', 'Sair'];
+const settings = ['Perfil', 'Plataforma', 'Sair'];
 
 const ResponsiveAppBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -79,7 +79,7 @@ const ResponsiveAppBar = () => {
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page} onClick={<Link />}>
+                                <MenuItem key={page} onClick={handleCloseNavMenu}>
                                     <Typography textAlign="center">{page}</Typography>
                                 </MenuItem>
                             ))}
