@@ -1,36 +1,8 @@
-@charset "UTF-8";
-#promoçoes {
-  background-color: #CD23FA;
-  margin-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-#promoçoes .promoçoes-title {
-  text-align: center;
-  padding: 2rem 0;
-  color: white;
-}
-
-#promoçoes #promoçoes-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 2rem;
-}
-
-#promoçoes #promoçoes-container .promoçoes-card {
+.destinos-card {
   width: 25vw;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,14 +16,19 @@
           box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
 }
 
-#promoçoes #promoçoes-container .card-img-top {
+.destinos-card #Link-Style {
+  text-decoration: none;
+  color: black;
+}
+
+.destinos-card #Link-Style .card-img-top {
   width: 25vw;
   height: 28vh;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-#promoçoes #promoçoes-container .card-body {
+.destinos-card #Link-Style .card-body {
   padding: 0.5rem 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,7 +40,7 @@
   gap: 0.8rem;
 }
 
-#promoçoes #promoçoes-container .card-body .card-info {
+.destinos-card #Link-Style .card-body .card-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +51,7 @@
   gap: 0.5rem;
 }
 
-#promoçoes #promoçoes-container .card-body .card-info > div {
+.destinos-card #Link-Style .card-body .card-info > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,11 +66,11 @@
       flex-wrap: wrap;
 }
 
-#promoçoes #promoçoes-container .card-body .card-info .card-text {
+.destinos-card #Link-Style .card-body .card-info .card-text {
   text-align: center;
 }
 
-#promoçoes #promoçoes-container .card-body .card-info .card-text > strong {
+.destinos-card #Link-Style .card-body .card-info .card-text > strong {
   color: #32960E;
   font-size: 1.8rem;
 }

@@ -1,0 +1,20 @@
+#destinos {
+    background: #CD23FA;
+
+    .destinos-title {
+        text-align: center;
+        padding: 2rem 0;
+
+        background: white;
+    }
+    
+    .destinos-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+}

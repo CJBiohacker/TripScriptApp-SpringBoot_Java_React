@@ -1,37 +1,21 @@
-#promoçoes {
-    background-color: #CD23FA;
+.destinos-card {
+    width: 25vw;
+    // height: 50vh;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 2rem;
     
-    margin-top: 2rem;
-    padding-bottom: 2rem;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    
+    background: white;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
 
-    .promoçoes-title {
-        text-align: center;
-        padding: 2rem 0;
-        color: white;
-    }
-
-    #promoçoes-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        
-        gap: 2rem;
-        
-        .promoçoes-card {
-            width: 25vw;
-            // height: 50vh;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-            
-            display:flex;
-            flex-direction: column;
-            text-align: center;
-            
-            background: white;
-            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-        }
-
+    #Link-Style {
+        text-decoration: none;
+        color: black;
+    
         .card-img-top {
             width: 25vw;
             height: 28vh;
@@ -46,7 +30,6 @@
             gap: 0.8rem;
 
             .card-title {
-    
             }
 
             .card-info {
@@ -72,4 +55,4 @@
             }
         }
     }
-}
+}    

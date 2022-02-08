@@ -1,0 +1,27 @@
+#destinos {
+  background: #CD23FA;
+}
+
+#destinos .destinos-title {
+  text-align: center;
+  padding: 2rem 0;
+  background: white;
+}
+
+#destinos .destinos-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+/*# sourceMappingURL=Viagens.css.map */
