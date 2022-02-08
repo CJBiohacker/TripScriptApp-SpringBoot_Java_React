@@ -1,6 +1,4 @@
-import * as React from 'react';
-import ResponsiveAppBar from '../components/ResponsiveAppBar';
-import Footer from '../components/Footer';
+import React from 'react';
 import Form from '../components/Form';
 import '../styles/global.css'
 
@@ -8,9 +6,7 @@ const Contato = () => {
 
     return (
         <div>
-            <ResponsiveAppBar />
             <Form />
-            <Footer />
         </div>
     );
 }
