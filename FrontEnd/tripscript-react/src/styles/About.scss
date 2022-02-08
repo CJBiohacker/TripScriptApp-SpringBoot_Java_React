@@ -9,7 +9,7 @@
 
     color: white;
 
-    @media (max-width: 460px), (max-width: 768px) {
+    @media (max-width: 460px) {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -26,7 +26,7 @@
             width: 60%;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1080px) {
             width: 60%;
         }
     }
@@ -41,6 +41,10 @@
             @media (max-width: 460px) {
                 font-size: 0.7rem;
             }
+
+            @media (max-width: 768px) {
+                font-size: 0.6rem;
+            }
         }
     }
 
@@ -52,7 +56,7 @@
             font-size: 0.8rem;
 
             @media (max-width: 460px) {
-                font-size: 0.7rem;
+                font-size: 0.6rem;
             }
         }
     }

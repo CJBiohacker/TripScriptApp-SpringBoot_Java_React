@@ -1,0 +1,70 @@
+#cliente {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+}
+
+#cliente .cliente-title {
+  padding: 2rem 0;
+}
+
+#cliente .cliente-container {
+  width: 50vw;
+  border-radius: 12px;
+  background-color: #AF71E8;
+  padding: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  #cliente .cliente-container {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 460px) {
+  #cliente .cliente-container {
+    width: 85vw;
+  }
+}
+
+#cliente .cliente-container .cliente-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#cliente .cliente-container .cliente-form > label {
+  font-size: 1.4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.2rem;
+}
+
+#cliente .cliente-container .cliente-form > input, #cliente .cliente-container .cliente-form select {
+  padding: 0.8rem;
+  border-radius: 2px;
+}
+
+#cliente .cliente-container .cliente-form #cliente-button {
+  background-color: #F022D8;
+  padding: 0.8rem;
+  color: white;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Cliente.css.map */

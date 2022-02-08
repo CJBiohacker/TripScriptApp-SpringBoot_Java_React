@@ -11,7 +11,7 @@
   color: white;
 }
 
-@media (max-width: 460px), (max-width: 768px) {
+@media (max-width: 460px) {
   #home {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -46,7 +46,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   #home .home-logo {
     width: 60%;
   }
@@ -69,6 +69,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  #home .home-intro > p {
+    font-size: 0.6rem;
+  }
+}
+
 #home .home-intro2 {
   -ms-grid-row: 4;
       grid-row-start: 4;
@@ -82,7 +88,7 @@
 
 @media (max-width: 460px) {
   #home .home-intro2 > p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 }
 /*# sourceMappingURL=About.css.map */
