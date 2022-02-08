@@ -1,38 +1,36 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Card.css'
 
 const Card = (props) => {
 
-    const { cardTitle, cardTimeText, imgSrc, imgAlt, text1, text2, text3, text4, cardSmallPrice, cardStrongPrice } = props;
+    const { onClick, imgSrc, imgAlt, cardTitle, cardTimeText, text1, text2, text3, text4, cardSmallPrice, cardStrongPrice } = props;
 
     return (
-        <div id="promoçoes-container">
-            <div class="promoçoes-card">
-                <a href="#" style="text-decoration: none; color: black;">
-                    <img src={imgSrc}
-                        class="card-img-top" alt={imgAlt} />
-                    <div class="card-body">
-                        <h3 class="card-title">{cardTitle}</h3>
-                        <div class="card-info">
-                            <p class="card-text"><i class="fas fa-calendar-week"></i>{cardTimeText}
-                            </p>
-                            <div>
-                                <p class="card-text"><i class="fas fa-check"></i>{text1}</p>
-                                <p class="card-text"><i class="fas fa-check"></i>{text2}</p>
-                                <p class="card-text"><i class="fas fa-check"></i>{text3}</p>
-                                <p class="card-text"><i class="fas fa-check"></i>{text4}</p>
-                            </div>
-                            <p class="card-text">
-                                <small>À partir de</small>
-                                <small><del>{cardSmallPrice}</del></small>
-                                <strong>{cardStrongPrice}</strong>
-                            </p>
-                            <p class="card-text"><small>em até 12x s/ juros</small></p>
+        <div className="destinos-card">
+            <Link to='/viagens' id='Link-Style'>
+                <img src={imgSrc} className="card-img-top" alt={imgAlt} />
+                <div className="card-body">
+                    <h3 className="card-title">{cardTitle}</h3>
+                    <div className="card-info">
+                        <p className="card-text"><i className="fas fa-calendar-week"></i>{cardTimeText}
+                        </p>
+                        <div>
+                            <p className="card-text"><i className="fas fa-check"></i>{text1}</p>
+                            <p className="card-text"><i className="fas fa-check"></i>{text2}</p>
+                            <p className="card-text"><i className="fas fa-check"></i>{text3}</p>
+                            <p className="card-text"><i className="fas fa-check"></i>{text4}</p>
                         </div>
+                        <p className="card-text">
+                            <small>À partir de</small>
+                            <small><del>{cardSmallPrice}</del></small>
+                            <strong>{cardStrongPrice}</strong>
+                        </p>
+                        <p className="card-text"><small>em até 12x s/ juros</small></p>
                     </div>
-                </a>
-            </div>
-        </div >
+                </div>
+            </Link>
+        </div>
     );
 };
 

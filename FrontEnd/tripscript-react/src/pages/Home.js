@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import SlideShow from '../components/SlideShow';
 import About from '../components/About';
 import '../styles/global.css'
