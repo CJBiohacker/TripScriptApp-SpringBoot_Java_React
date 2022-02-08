@@ -1,17 +1,4 @@
 import React from "react";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Container from '@mui/material/Container'
-
-const theme = createTheme({
-    palette: {
-        primary: {
-            main: '#ab47bc',
-        },
-        secondary: {
-            main: '#4fc3f7',
-        },
-    },
-});
 
 const Footer = () => {
 
