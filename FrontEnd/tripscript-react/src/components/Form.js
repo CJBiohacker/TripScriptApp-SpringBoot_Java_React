@@ -3,8 +3,6 @@ import { useState, useForm } from "react";
 import '../styles/Form.css'
 
 const Form = () => {
-    // const { register, handleSubmit } = useForm();
-    // const [result, setResult] = useState("");
 
     return (
 
