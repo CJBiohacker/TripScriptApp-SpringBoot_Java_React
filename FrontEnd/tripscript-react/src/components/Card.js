@@ -4,7 +4,7 @@ import '../styles/Card.css'
 
 const Card = (props) => {
 
-    const { onClick, imgSrc, imgAlt, cardTitle, cardTimeText, text1, text2, text3, text4, cardSmallPrice, cardStrongPrice } = props;
+    const { imgSrc, imgAlt, cardTitle, cardTimeText, text1, text2, text3, text4, cardSmallPrice, cardStrongPrice } = props;
 
     return (
         <div className="destinos-card">
