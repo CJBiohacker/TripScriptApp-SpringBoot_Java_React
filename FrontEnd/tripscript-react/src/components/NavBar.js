@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/NavBar';
 import Container from 'react-bootstrap/Container';
 
-const ResponsiveAppBar = () => {
+const NavBar = () => {
 
     return (
         <div>
@@ -23,4 +23,4 @@ const ResponsiveAppBar = () => {
     );
 };
 
-export default ResponsiveAppBar;
+export default NavBar;

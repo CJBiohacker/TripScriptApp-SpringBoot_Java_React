@@ -3,7 +3,7 @@ import Home from './pages/Home'
 import Clientes from './pages/Clientes'
 import Viagens from './pages/Viagens'
 import Contato from './pages/Contato'
-import ResponsiveAppBar from './components/ResponsiveAppBar';
+import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './styles/global.css';
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <ResponsiveAppBar />
+        <NavBar />
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path='/clientes' exact element={<Clientes />} />
