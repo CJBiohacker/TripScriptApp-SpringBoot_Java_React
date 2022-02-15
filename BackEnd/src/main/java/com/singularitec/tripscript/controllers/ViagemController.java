@@ -12,6 +12,7 @@ import java.util.NoSuchElementException;
 
 @RestController                                                                 // Aciona o Controller e Response Body que troca dados em JSON e/ou XML.
 @RequestMapping("/viagem")                                                      // Mapeia os Responses para os métodos do Controller.
+//@CrossOrigin(origins = "*")                                                    // Permite que ocorra CORS (Compartilhamento de recursos com origens diferentes) de aplicações diferentes via HTTP/S. (Ex.: Um POST via React)
 public class ViagemController {
 
     @Autowired

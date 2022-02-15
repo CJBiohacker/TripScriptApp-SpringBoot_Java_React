@@ -12,6 +12,7 @@ import java.util.NoSuchElementException;
 
 @RestController                                                                 // Aciona o Controller e Response Body que troca dados em JSON e/ou XML.
 @RequestMapping("/cliente")                                                     // Mapeia os Responses para os métodos do Controller.
+//@CrossOrigin(origins = "*")                                                    // Permite que ocorra CORS (Compartilhamento de recursos com origens diferentes) de aplicações diferentes via HTTP/S. (Ex.: Um POST via React)
 public class ClienteController {
 
     @Autowired
@@ -52,7 +53,7 @@ public class ClienteController {
         }
     }
 
-    @DeleteMapping("/delete/{id}")                                                     // Mapeia os Requests de HTTP DELETE (DELETE) por id para os métodos locais.
+    @DeleteMapping("/delete/{id}")                                              // Mapeia os Requests de HTTP DELETE (DELETE) por id para os métodos locais.
     public String delete(@PathVariable Integer id){
         clienteService.deleteCliente(id);
         return "<h1>Cliente de id " + id + " deletado !</h1>";
