@@ -1,8 +1,26 @@
 import React from 'react';
-import { useState, useForm } from "react";
+import { useState, useEffect } from "react";
+import FormService from '../services/FormService';
 import '../styles/Form.css'
 
 const Form = () => {
+
+    const [nome, setNome] = useState('');
+    const [email, setEmail] = useState('');
+    const [país, setPaís] = useState('');
+    const [assunto, setAssunto] = useState('');
+
+    const SendForm = (e) => {
+
+        e.preventDefault();
+
+        const form = { nome, email, país, assunto };
+
+        FormService.createForm(form).then((response) => {
+            console.log(response.data);
+        })
+
+    };
 
     return (
 
@@ -13,15 +31,15 @@ const Form = () => {
             </div>
 
             <div class="contato-container">
-                <form class="contato-form" action="#">
+                <form class="contato-form" method='POST' >
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." />
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." value={nome} onChange={(e) => setNome(e.target.value)} />
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu email..." />
+                    <input type="email" id="email" name="email" placeholder="Digite seu email..." value={email} onChange={(e) => setEmail(e.target.value)} />
 
                     <label for="país">País</label>
-                    <select id="país" name="país">
+                    <select id="país" name="país" value={país} onChange={(e) => setPaís(e.target.value)}>
                         <option value="1">Brasil</option>
                         <option value="2">Canada</option>
                         <option value="3">USA</option>
@@ -39,9 +57,9 @@ const Form = () => {
 
                     <label for="assunto">Dúvida/Pergunta</label>
                     <textarea id="assunto" name="assunto"
-                        placeholder="Digite suas dúvidas e/ou perguntas..."></textarea>
+                        placeholder="Digite suas dúvidas e/ou perguntas..." value={assunto} onChange={(e) => setAssunto(e.target.value)}></textarea>
 
-                    <input id="contato-button" type="submit" value="Enviar" />
+                    <input id="contato-button" type="submit" onClick={(e) => SendForm(e)} />
                 </form>
             </div>
 
